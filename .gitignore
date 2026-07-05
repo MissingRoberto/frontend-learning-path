@@ -1,3 +1,23 @@
-**/node_modules
-**/.parcel-cache
-**/dist
+# Dependencies
+**/node_modules/
+
+# Build output
+**/dist/
+**/.parcel-cache/
+
+# Coverage and test output
+**/coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

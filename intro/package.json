@@ -1,0 +1,19 @@
+{
+  "name": "intro",
+  "version": "1.0.0",
+  "description": "react intro",
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "jest": "^30.4.2",
+    "parcel": "^2.16.4",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}

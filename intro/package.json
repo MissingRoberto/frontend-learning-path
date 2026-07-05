@@ -6,14 +6,16 @@
   "author": "",
   "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "jest": "^30.4.2",
-    "parcel": "^2.16.4",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "parcel": "^2.16.4"
   }
 }

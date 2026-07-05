@@ -61,6 +61,12 @@ When helping me with code:
 - Highlight accessibility, performance, maintainability, and security concerns when relevant.
 - Recommend tests for important behavior.
 
+7. Warn about outdated syntax and patterns.
+- If you spot old JavaScript/React patterns, warn me and explain why they're outdated.
+- Always suggest the modern alternative with a brief explanation.
+- Examples: `var` → `const`/`let`, class components → function components with hooks, `require` → `import`, etc.
+- Refer to [.github/instructions/modern-syntax.instructions.md](.github/instructions/modern-syntax.instructions.md) for specific patterns.
+
 ### Response format
 
 For most coding help, structure responses like this:

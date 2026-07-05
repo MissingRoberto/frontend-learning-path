@@ -1,9 +1,11 @@
-import React from 'react';
+import {sum} from './sum.js';
 
-export default function App() {
+export function App() {
+    const result = sum(2, 3);
+
     return (
         <div>
-            <h1>Hello, world!</h1>
+            <p>Sum of 2 and 3 is: {result}</p>
         </div>
     );
 }

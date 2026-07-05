@@ -723,16 +723,13 @@ $parcel$ReactRefreshHelpers$3d99.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _app = require("./app");
-var _appDefault = parcelHelpers.interopDefault(_app);
 const root = (0, _clientDefault.default).createRoot(document.getElementById('root'));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _app.App), {}, void 0, false, {
     fileName: "index.js",
-    lineNumber: 6,
+    lineNumber: 5,
     columnNumber: 13
 }, undefined));
 
@@ -741,7 +738,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./app":"4ZGjQ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react-dom/client":"hrvwu","./app":"4ZGjQ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -17405,22 +17402,25 @@ $parcel$ReactRefreshHelpers$5fe5.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>App);
+parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
+var _sumJs = require("./sum.js");
 function App() {
+    const result = (0, _sumJs.sum)(2, 3);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Hello, world!"
-        }, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            children: [
+                "Sum of 2 and 3 is: ",
+                result
+            ]
+        }, void 0, true, {
             fileName: "app.js",
-            lineNumber: 6,
+            lineNumber: 8,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 9
     }, this);
 }
@@ -17433,7 +17433,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./sum.js":"eWyxZ"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -19739,6 +19739,14 @@ function $da9882e673ac146b$var$ErrorOverlay() {
         editorHandler: $da9882e673ac146b$var$editorHandler
     });
     return null;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"eWyxZ":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "sum", ()=>sum);
+function sum(a, b) {
+    return a + b;
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["kxwl6","jOXmm"], "jOXmm", "parcelRequirefdfe", {}, null, null, "http://localhost:1234")

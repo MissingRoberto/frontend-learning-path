@@ -1,4 +1,5 @@
 import { sum } from './sum.js';
+import { useState } from 'react';
 
 export function App() {
     // 2. Deconstructuring
@@ -58,6 +59,20 @@ export function App() {
         { name: 'Charlie', grade: 'C' }
     ];
 
+    // 4. Example arrow functions
+    const [counter, setCounter] = useState(0);
+
+    const incrementCounter = () => {
+        setCounter(prev => prev + 1);
+        console.log('Counter:', counter + 1);
+    }
+
+    // 8. Use of reduce
+    const totalStudents = students.reduce((acc,current)=> {
+        acc = acc + 1
+        return acc
+    }, 0)
+
     return (
         <div>
             {biggerThanOne && <p>Sum of 2 and 3 is: {result}</p>}
@@ -70,6 +85,21 @@ export function App() {
                     <p>Grade: {student.grade}</p>
                 </div>
             ))}
+            {/* 5 Example of event handling */}
+            <button onClick={() => alert('Button clicked!')}>Click Me</button>
+            {/* 6 Example of state management */}
+            <button onClick={incrementCounter}>Increment Counter</button>
+            <p>Counter: {counter}</p>
+            {/* 7 Example of filter and map */}
+            <h2>Students with grade A</h2>
+            {students.filter(student => student.grade === 'A').map((student, index) => (
+                <div key={index}>
+                    <h2>Student {index + 1}</h2>
+                    <p>Name: {student.name}</p>
+                    <p>Grade: {student.grade}</p>
+                </div>
+            ))}
+            <p>Total Students: {totalStudents}</p>
         </div>
     );
 }
